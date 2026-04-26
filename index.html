@@ -928,8 +928,8 @@
 
     .sidebar .field-grid {
       display: grid;
-      gap: 10px;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .sidebar .field--third {
@@ -1069,12 +1069,12 @@
       }
 
       .sidebar .field-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-columns: 1fr;
       }
 
       .sidebar .field--third,
       .sidebar .field--full {
-        grid-column: span 2;
+        grid-column: span 1;
       }
 
       .sidebar.is-open {
@@ -1096,8 +1096,8 @@
 
       <section class="form-card">
         <div class="section-title">
-          <h2>지도 이동</h2>
-          <span class="section-caption">시도 · 시군구 선택</span>
+          <h2>지역 선택</h2>
+          <span class="section-caption">시도 · 시군구 · 읍면동 선택</span>
         </div>
 
         <form id="loadForm" novalidate>
@@ -1114,7 +1114,7 @@
                 <option value="">시군구 선택</option>
               </select>
             </div>
-            <div class="field field--third field--hidden">
+            <div class="field field--third">
               <label for="legalDong">읍면동 <span>*</span></label>
               <select id="legalDong" name="legalDong" data-default="성남동" disabled>
                 <option value="">읍면동 선택</option>
